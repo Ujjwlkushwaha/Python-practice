@@ -4,11 +4,15 @@
 # Object -> Object is that real world object which properties and behavior is defined inside class.
 #  
 class Student:
-    score = 100  # class attribute
+    score = 100  # class attribute - It is common for all objects
+
+# Default constructor
+    def __init__(self):
+        print("This is default constructor")
 
 # this is constructor for initializing attributes 
     def __init__(self , name , grade):
-        self.name = name  # Instance attribute
+        self.name = name  # Instance attribute - it is different for all objects
         self.grade = grade
 
 # class methods or features
@@ -19,6 +23,8 @@ class Student:
 student1 = Student( "Ujjwal", 5)
 student1.show_details() # This is Ujjwal from class 5
 
+
+# self keyword -> this keyword pointing to current object 
 
 ## Features of OOPs-
 
